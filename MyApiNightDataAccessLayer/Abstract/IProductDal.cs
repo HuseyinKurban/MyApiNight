@@ -9,5 +9,6 @@ namespace MyApiNightDataAccessLayer.Abstract
 {
     public interface IProductDal:IGenericDal<Product>
     {
+        int GetProductCount();
     }
 }

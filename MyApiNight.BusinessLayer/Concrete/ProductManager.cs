@@ -14,6 +14,11 @@ namespace MyApiNight.BusinessLayer.Concrete
     {
         private readonly IProductDal _productDal;
 
+        public ProductManager(IProductDal productDal)
+        {
+            _productDal = productDal;
+        }
+
         public void TDelete(int id)
         {
             _productDal.Delete(id);
@@ -27,6 +32,11 @@ namespace MyApiNight.BusinessLayer.Concrete
         public Product TGetById(int id)
         {
             return _productDal.GetById(id);
+        }
+
+        public int TGetProductCount()
+        {
+            return _productDal.GetProductCount();
         }
 
         public void TInsert(Product entity)

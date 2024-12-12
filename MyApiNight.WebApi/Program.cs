@@ -1,6 +1,19 @@
+using MyApiNight.BusinessLayer.Abstract;
+using MyApiNight.BusinessLayer.Concrete;
+using MyApiNightDataAccessLayer.Abstract;
+using MyApiNightDataAccessLayer.Context;
+using MyApiNightDataAccessLayer.EntityFramework;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddScoped<ICategoryService,CategoryManager>();
+builder.Services.AddScoped<ICategoryDal,EfCategoryDal>();
+
+builder.Services.AddScoped<IProductService,ProductManager>();
+builder.Services.AddScoped<IProductDal,EfProductDal>();
+
+builder.Services.AddDbContext<ApiContext>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

@@ -13,6 +13,11 @@ namespace MyApiNight.BusinessLayer.Concrete
     {
         private readonly ICategoryDal _categoryDal;
 
+        public CategoryManager(ICategoryDal categoryDal)
+        {
+            _categoryDal = categoryDal;
+        }
+
         public void TDelete(int id)
         {
             _categoryDal.Delete(id);

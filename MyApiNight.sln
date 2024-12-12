@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyApiNight.EntityLayer", "MyApiNightEntityLayer\MyApiNight.EntityLayer.csproj", "{18D66151-0C28-476C-88C2-18A5C800941C}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyApiNight.BusinessLayer", "MyApiNight.BusinessLayer\MyApiNight.BusinessLayer.csproj", "{5F9A4C7B-A2CE-438B-88DC-44CCB31FA9E5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyApiNight.WebApi", "MyApiNight.WebApi\MyApiNight.WebApi.csproj", "{57506EA1-EBE0-4191-BF35-24F7C8E1806C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyApiNight.WebUI", "MyApiNight.WebUI\MyApiNight.WebUI.csproj", "{7A2A913A-D882-4B01-A68C-1591E2383FAB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{57506EA1-EBE0-4191-BF35-24F7C8E1806C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57506EA1-EBE0-4191-BF35-24F7C8E1806C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57506EA1-EBE0-4191-BF35-24F7C8E1806C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A2A913A-D882-4B01-A68C-1591E2383FAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A2A913A-D882-4B01-A68C-1591E2383FAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A2A913A-D882-4B01-A68C-1591E2383FAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A2A913A-D882-4B01-A68C-1591E2383FAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
